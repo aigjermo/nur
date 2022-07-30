@@ -1,12 +1,28 @@
 {
   "nodes": {
+    "edmarketconnector": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655556787,
+        "narHash": "sha256-Rd0faAp6OPUfxJY7XEyYS0VGtCZG2eVHAlbAzGmbckQ=",
+        "owner": "EDCD",
+        "repo": "edmarketconnector",
+        "rev": "e1354c34827369da3c60772d219f138e003c830a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "EDCD",
+        "repo": "edmarketconnector",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1624561540,
-        "narHash": "sha256-izJ2PYZMGMsSkg+e7c9A1x3t/yOLT+qzUM6WQsc2tqo=",
+        "lastModified": 1659130785,
+        "narHash": "sha256-p1VdDKZkYFX7SHWugkX6w+Z5+ZIyhcOg3bY1PXd4iEw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c6a049a3d32293b24c0f894a840872cf67fd7c11",
+        "rev": "093ecc5f3e3ab883ef71c9cd3c5f04495bbf56ac",
         "type": "github"
       },
       "original": {
@@ -18,6 +34,7 @@
     },
     "root": {
       "inputs": {
+        "edmarketconnector": "edmarketconnector",
         "nixpkgs": "nixpkgs"
       }
     }
