@@ -25,7 +25,10 @@
     {
       packages = forAllSystems (system: import ./default.nix {
         inherit inputs;
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowBroken = true;
+        };
       });
     };
 }
