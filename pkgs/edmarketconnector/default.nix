@@ -15,22 +15,35 @@ pypkgs.buildPythonApplication {
 
   propagatedBuildInputs = with pypkgs; [
     certifi
-      requests
-      watchdog
-      semantic-version
-      tkinter
+    requests
+    watchdog
+    semantic-version
+    tkinter
   ];
 
   installPhase = ''
     runHook preInstall
 
-    mkdir -p $out/share
-    cp -r * $out/share
+    mkdir -p $out/opt
+    cp -r * $out/opt
 
     mkdir -p $out/bin
-    makeWrapper $out/share/EDMarketConnector.py $out/bin/EDMarketConnector \
+    makeWrapper $out/opt/EDMarketConnector.py $out/bin/EDMarketConnector \
     --prefix PATH ':' "$program_PATH" \
     --set PYTHONPATH "$PYTHONPATH"
+
+    mkdir -p $out/share/applications
+    cat > $out/share/applications/EDMarketConnector.desktop << EOF
+    [Desktop Entry]
+    Name=ED Market Connector
+    Categories=Game
+    Exec=$out/bin/EDMarketConnector
+    Icon=EDMarketConnector
+    Type=Application
+    EOF
+
+    mkdir -p $out/share/icons/hicolor/512x512/apps
+    cp EDMarketConnector.png $out/share/icons/hicolor/512x512/apps/
 
     runHook postInstall
     '';
