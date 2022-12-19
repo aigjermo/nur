@@ -3,11 +3,11 @@
     "edmarketconnector": {
       "flake": false,
       "locked": {
-        "lastModified": 1671282116,
-        "narHash": "sha256-T0JNx/22C+yI0a8Qj8DK9GFwr4iB2/hboJ2m780lZ7Q=",
+        "lastModified": 1671369091,
+        "narHash": "sha256-AvD7y01LPPC/AVQbnwvp1snLF76o32RlUce6C48Nb90=",
         "owner": "EDCD",
         "repo": "edmarketconnector",
-        "rev": "fbfdb381073446974a1a0b654e28d7ceb83f28e2",
+        "rev": "736a6a5a8355efe94ae5689f9deb01c50285a123",
         "type": "github"
       },
       "original": {
