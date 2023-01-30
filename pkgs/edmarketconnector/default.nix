@@ -43,7 +43,7 @@ pypkgs.buildPythonApplication {
     EOF
 
     mkdir -p $out/share/icons/hicolor/512x512/apps
-    cp EDMarketConnector.png $out/share/icons/hicolor/512x512/apps/
+    cp io.edcd.EDMarketConnector.png $out/share/icons/hicolor/512x512/apps/EDMarketConnector.png
 
     runHook postInstall
     '';
