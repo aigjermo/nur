@@ -3,11 +3,11 @@
     "edmarketconnector": {
       "flake": false,
       "locked": {
-        "lastModified": 1691521159,
-        "narHash": "sha256-0mnxaiRJyfZFg68ps059wxI0hZwJCVLbBT9zVqTl9Bw=",
+        "lastModified": 1692738057,
+        "narHash": "sha256-m3NX1zLN8IL1a5Zkttw5s6/WP/83aM6VT6ddc+HDh4k=",
         "owner": "EDCD",
         "repo": "edmarketconnector",
-        "rev": "6e8f8815df95b4e506854474da21788af300123f",
+        "rev": "6f2ba8d1b2420fec1958414273d055c77be1cf9b",
         "type": "github"
       },
       "original": {
@@ -18,11 +18,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1692557222,
-        "narHash": "sha256-TCOtZaioLf/jTEgfa+nyg0Nwq5Uc610Z+OFV75yUgGw=",
+        "lastModified": 1692684269,
+        "narHash": "sha256-zJk2pyF4Cuhtor0khtPlf+hfJIh22rzAUC+KU3Ob31Q=",
         "owner": "NixOs",
         "repo": "nixpkgs",
-        "rev": "0b07d4957ee1bd7fd3bdfd12db5f361bd70175a6",
+        "rev": "9d757ec498666cc1dcc6f2be26db4fd3e1e9ab37",
         "type": "github"
       },
       "original": {
