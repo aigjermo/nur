@@ -5,8 +5,10 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     edmarketconnector = {
-      url = "github:EDCD/edmarketconnector";
+      url = "https://github.com/EDCD/EDMarketConnector.git";
+      type = "git";
       flake = false;
+      submodules = true;
     };
   };
 
