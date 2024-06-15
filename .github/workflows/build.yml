@@ -41,7 +41,6 @@ jobs:
         nixChannel:
           - nixos-unstable
           - nixpkgs-unstable
-          - nixos-22.05
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
