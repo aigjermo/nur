@@ -2,7 +2,7 @@
 { pkgs, lib, edmarketconnector, ... }:
 
 let
-pypkgs = pkgs.python310.pkgs;
+pypkgs = pkgs.python312.pkgs;
 
 in
 pypkgs.buildPythonApplication {
@@ -15,10 +15,11 @@ pypkgs.buildPythonApplication {
 
   propagatedBuildInputs = with pypkgs; [
     certifi
+    pillow
     requests
-    watchdog
     semantic-version
     tkinter
+    watchdog
   ];
 
   installPhase = ''
