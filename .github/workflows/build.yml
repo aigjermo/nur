@@ -55,7 +55,7 @@ jobs:
     - name: Show nixpkgs version
       run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
     - name: Setup cachix
-      uses: cachix/cachix-action@v13
+      uses: cachix/cachix-action@v15
       if: ${{ env.CACHIX_NAME != 'false' }}
       with:
         name: ${{ env.CACHIX_NAME }}
