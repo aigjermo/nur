@@ -16,6 +16,7 @@ pypkgs.buildPythonApplication {
   propagatedBuildInputs = with pypkgs; [
     certifi
     pillow
+    psutil
     requests
     semantic-version
     tkinter
