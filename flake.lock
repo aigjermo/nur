@@ -3,11 +3,11 @@
     "edmarketconnector": {
       "flake": false,
       "locked": {
-        "lastModified": 1763086009,
-        "narHash": "sha256-xRYu2B5oUS5AOrWdIaKsjOGa1cI2C8gOp3yBuD3w9ls=",
+        "lastModified": 1763430091,
+        "narHash": "sha256-1c6UewO9Vv7H9FROgBzEBL2QnDexKMjhkz6iDsjvZoc=",
         "ref": "refs/heads/main",
-        "rev": "a5f70abc6c03d4155d8938147cc2713b65503669",
-        "revCount": 6358,
+        "rev": "1362177577172f14c96e5c39df468d56d001e67b",
+        "revCount": 6361,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/EDCD/EDMarketConnector.git"
@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1763312402,
-        "narHash": "sha256-3YJkOBrFpmcusnh7i8GXXEyh7qZG/8F5z5+717550Hk=",
+        "lastModified": 1763375004,
+        "narHash": "sha256-e81Xfa7xhRZfqGB4s3xEvrg4p1v+fToM6CIQlXUyaX0=",
         "owner": "NixOs",
         "repo": "nixpkgs",
-        "rev": "85a6c4a07faa12aaccd81b36ba9bfc2bec974fa1",
+        "rev": "8b6600824693a9c706ef09bd86711ca393703466",
         "type": "github"
       },
       "original": {
