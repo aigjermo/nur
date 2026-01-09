@@ -1,8 +1,13 @@
 # Adapted from github:nix-community/nur-combined/repos/plabadens
-{ pkgs, lib, edmarketconnector, ... }:
+{
+  pkgs,
+  lib,
+  edmarketconnector,
+  ...
+}:
 
 let
-pypkgs = pkgs.python312.pkgs;
+  pypkgs = pkgs.python3.pkgs;
 
 in
 pypkgs.buildPythonApplication {
@@ -20,8 +25,13 @@ pypkgs.buildPythonApplication {
     requests
     semantic-version
     tkinter
+    tomli-w
     watchdog
   ];
+
+  patchPhase = ''
+    chmod a+x EDMarketConnector.py
+  '';
 
   installPhase = ''
     runHook preInstall
@@ -48,14 +58,14 @@ pypkgs.buildPythonApplication {
     cp io.edcd.EDMarketConnector.png $out/share/icons/hicolor/512x512/apps/EDMarketConnector.png
 
     runHook postInstall
-    '';
+  '';
 
   meta = with lib; {
     homepage = "https://github.com/EDCD/EDMarketConnector";
     description = ''
       Downloads commodity market and other station data from the game
       "Elite: Dangerous" for use with all popular online and offline trading tools.
-      '';
+    '';
     license = licenses.gpl2Only;
   };
 }
